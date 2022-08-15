@@ -38,7 +38,7 @@ driver.get(course_link)
 driver.get(first_lesson)
 driver.implicitly_wait(10)
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-driver.find_element(By.CSS_SELECTOR, next_lesson_1).click()
+driver.find_element(By.CSS_SELECTOR, next_lesson_1).click() 
 
 # from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
