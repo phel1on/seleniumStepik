@@ -25,19 +25,20 @@ driver = webdriver.Chrome()
 #------------------------------- авторизация и выбор курса---------------------
 
 driver.get('https://stepik.org/catalog?auth=login')
+driver.maximize_window()
 #driver.find_element(By.XPATH, "//input[contains(@id, 'id_login_email')]").send_keys('store2_korzinka@mail.ru')
 driver.find_element(By.ID, login_email).send_keys(valid_mail)
 driver.find_element(By.XPATH, login_password).send_keys(valid_password)
 driver.find_element(By.XPATH, submit_btn).click()
 time.sleep(3)
 driver.get(course_link)
-#driver.find_element(By.CSS_SELECTOR, '#ember106 > button').click()
-time.sleep(10.0)
 #driver.find_element(By.XPATH, continue_btn).click()
-driver.find_element((By.XPATH, first_lesson)).click()
-
-ASDDK
-
+#time.sleep(10.0)
+#driver.find_element(By.XPATH, continue_btn).click()
+driver.get(first_lesson)
+driver.implicitly_wait(10)
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+driver.find_element(By.CSS_SELECTOR, next_lesson_1).click()
 
 # from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys

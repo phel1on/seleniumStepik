@@ -4,5 +4,6 @@ submit_btn = "/html/body/div[4]/div/div[2]/div/div[2]/div/div/div/div[1]/div/div
 search_input =  "//input[contains(@class, 'search-form__input ')]"
 search_btn = '/html/body/main/div[1]/div[1]/div/div/button[3]'
 search_close_btn = '/html/body/main/div[1]/div[1]/div/div/div[1]/span/div/div/div/button/span'
-continue_btn = '/html/body/main/div/div[1]/div/button'
-first_lesson = '/html/body/main/div/article/nav/div/div/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/a'
+continue_btn = '//*[@id="ember2030"]/button'
+first_lesson = 'https://stepik.org/lesson/290248/step/1?unit=271724'
+next_lesson_1 = '#ember166 > div.lesson-modern__body > div.lesson-modern__wrapper > div.lesson.lesson-modern > div.lesson__footer.no-print > div > div.lesson__footer-nav-buttons > button > span:nth-child(1)'
