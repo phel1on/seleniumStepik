@@ -36,8 +36,7 @@ time.sleep(10.0)
 #driver.find_element(By.XPATH, continue_btn).click()
 driver.find_element((By.XPATH, first_lesson)).click()
 
-
-
+ASDDK
 
 
 # from selenium import webdriver
